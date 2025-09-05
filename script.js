@@ -17,3 +17,4 @@ var point = null;
 // undefined
 
 var salary = undefined;
+let day = 'Monday'
