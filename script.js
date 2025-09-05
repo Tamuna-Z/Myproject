@@ -1,20 +1,14 @@
+// variables var, let const
+// ცვლადის წერის სინტაქსი
+// declaration, assignment, reassignment,hoisting
+// მონაცემთა ტიპები,პრიმიტიული, რეფერენსი
+// არითმეტიკული ოპერატორები +,-,/, %, **, ++, --
+// შედარების ოპერატორები == , ===, =, !== , > , <, >= , <= ,
+// ლოგიკური ოპერატორები  && , ||
+// Ternary ოპერატორი  ?:
+// პირობითი ოპერატორები if, else if, else, switch
+// კოერცია, იმპლისიტური , ექსპლისიტური 
+// prompt მეთოდი
 
-// string type
-var userName = "Nina"
-console.log(userName);
-// number
-var age = 12;
-console.log(age);
 
-// boolean true/ false
-var is_student = true;
-console.log(is_student);
 
-// null
-
-var point = null;
-
-// undefined
-
-var salary = undefined;
-let day = 'Monday'
