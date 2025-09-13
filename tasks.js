@@ -11,9 +11,9 @@ let age = 28;
 const country="Georgia"
 
 // დაბეჭდე ეს ცვლადები console.log()-ით.
-console.log(name)
-console.log(age)
-console.log(country)
+// console.log(name)
+// console.log(age)
+// console.log(country)
 
 // 2️⃣ Declaration, Assignment, Reassignment
 
