@@ -116,20 +116,20 @@
 // console.log(result); // "Passed"
 
 // // 3. switch - ზუსტი ქულის მიხედვით
-let score = 100;
-switch (score) {
-  case 100:
-    console.log("Perfect score!");
-    break;
-  case 85:
-    console.log("Very good!");
-    break;
-  case 60:
-    console.log("Average");
-    break;
-  default:
-    console.log("Keep trying!");
-}
+// let score = 100;
+// switch (score) {
+//   case 100:
+//     console.log("Perfect score!");
+//     break;
+//   case 85:
+//     console.log("Very good!");
+//     break;
+//   case 60:
+//     console.log("Average");
+//     break;
+//   default:
+//     console.log("Keep trying!");
+// }
 // // let score = 75;
 
 // switch (true) {
