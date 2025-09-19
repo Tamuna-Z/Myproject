@@ -6,7 +6,9 @@
 // 5) მასივის მეთოდები map, reduce, foreach 
 
 
-//1 ობიექტის შექმნა
+//1 ობიექტის შექმნა key: value
+
+
 // let student = {
 //   name: "ნინო",
 //   age: 15,
@@ -14,9 +16,39 @@
 //   isActive: true
 // };
 
+ 2
+let student = {
+  name: "ნინო",
+  age: 15,
+  grade: "10th",
+  isActive: true,
+ 
+  
+  // მეთოდი
+  greet: function() {
+    console.log(`გამარჯობა, მე ვარ ${this.name}`);
+  },
+  
+  // მასივი
+  hobbies: ["კითხვა", "ხატვა", "პროგრამირება"],
+  
+  // ობიექტი
+  address: {
+     city: "თბილისი",
+    street: "ზუბალაშვილის ქუჩა",
+    number: 12
+  }
+};
 
-// წიგნის ობიექტი
-// let book = {
+// // გამოყენება
+// student.greet();                 // გამოიტანს: გამარჯობა, მე ვარ ნინო
+// console.log(student.hobbies[1]); // გამოიტანს: მხატვა
+// console.log(student.address.street); // გამოიტანს: თბილისი
+// console.log(student.city);
+
+
+// 3წიგნის ობიექტი
+// const book = {
 //   title: "ჰარი პოტერი და ფილოსოფიური ქვა",
 //   author: "ჯ. კ. როულინგი",
 //   pages: 223,
@@ -32,7 +64,7 @@
 // console.log(student.age);    // გამოიტანს: 15
 
 
-// ახალი ინფორმაცია დამატება
+// // ახალი ინფორმაცია დამატება
 // book.genre = "ფენტეზი";  // ახალი key:value წყვილი
 // console.log(book.genre);  // გამოიტანს: ფენტეზი
 
@@ -44,9 +76,10 @@
 // book.isAvailable = false;  // ხელმისაწვდომობის შეცვლა
 // console.log(book.isAvailable); // გამოიტანს: false
 
-// წაშლა
+// // წაშლა
 
 // delete book.genre;
+
 
 
 //2) while (პირობა) {
@@ -63,7 +96,8 @@
 
 // // მაგალითი: მასივის ელემენტების დაბეჭდვა
 
-// let fruits = ["apple", "banana", "cherry"];
+// let fruits = ["apple", "banana", "cherry","apple", "banana", "cherry"];
+
 // let j = 0;
 
 // while (j < fruits.length) {
@@ -83,10 +117,35 @@
 // } while (j <= 5);
 
 // 3 template literal  -  `${}`
-// // console.log(`Hello, my name is ${userName} and I am ${age} years old.`);
+// let userName ="Ana"
+// let age = 45
+// let city ="Poti"
+// // console.log(hello userName)
+
+// console.log(`Hello, my name is ${userName} and I am ${age} years old I live in ${city}.`);
+// console.log("hello")
+
+
+
+function allow(score){
+
+if (score >= 90) {
+  console.log("Excellent");
+} else if (score >= 75) {
+  console.log("Good");
+} else {
+  console.log("Needs Improvement");
+}
+
+}
+
+allow(45)
+allow(98)
+allow(87)
+
 
 // 4
-//  function - Declaration, espression, arrow
+//  function - Declaration, expression, arrow
 // ფუნქციის გამოძახება წინასწარ
 
 // sayHello();
@@ -131,13 +190,18 @@
 
 //  expression function
 
-// const finalPrice = function(price) {
-//   let discount = price * 0.20;
-//   let total = price - discount;
-//   return total;
-// };
 
-// console.log(finalPrice(100)); // 80
+
+const finalPrice = function(price) {
+  let discount = price * 0.20;
+  let total = price - discount;
+  return total;
+};
+console.log(finalPrice(130)); // 80
+console.log(finalPrice(234)); // 80
+console.log(finalPrice(1130)); // 80
+
+
 
 //  arrow function1
 // const finalPrice = (price) => {
@@ -159,6 +223,13 @@
 // სავარჯიშოები
 
 //1) დაწერე ფუნქცია, რომელიც მიიღებს რიცხვს და დააბრუნებს  კვადრატს.
+
+function square(number1, number2){
+  return number1 + number2
+
+}
+
+console.log(square(2,5))
 
 // მაგალითი: თუ შეიყვან 5 → უნდა დააბრუნოს 25.
 
@@ -208,6 +279,19 @@
 
 // const names = users.map(user => user.name);
 // console.log(names); // ["Ana", "Gio", "Nino"]
+
+// let students = [
+//   { name: "ნინო", grades: [90, 80, 85] },
+//   { name: "ლაშა", grades: [70, 75, 80] }
+// ];
+
+// // თითოეულის საშუალო ქულის გამოთვლა
+// let averages = students.map(student => {
+//   let sum = student.grades.reduce((a, b) => a + b, 0);
+//   return sum / student.grades.length;
+// });
+
+// console.log(averages); // [85, 75]
 
 
 // reduce

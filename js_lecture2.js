@@ -14,16 +14,17 @@
 
 //1) // splice(start, deleteCount, item1, item2, ...)
 
-// // splice - წაშლის ან ჩასვამს ელემენტებს
+// splice - წაშლის ან ჩასვამს ელემენტებს
 // let fruits = ["apple", "banana", "cherry", "mango","fig"];
-// fruits.splice(1,2, "orange"); 
-// console.log(fruits); // ["apple", "orange", "mango","fig"]
+// fruits.splice(1,3, "orange"); 
+// console.log(fruits); 
 
 // array.slice(start, end)
 // slice - იღებს მასივის ნაწილს
              
-// let numbers = [1, 2, 3, 4, 5];
-// let part = numbers.slice(1, 4);
+// let numbers = [100, 22, 3567, 4, 5,6,8];
+// let part = numbers.slice(2, 4);
+// console.log(numbers)
 // console.log(part); // [2, 3, 4]
 
 // // reverse - აბრუნებს  შებრუნებულ მასივს
@@ -118,10 +119,10 @@
 // // 3. switch - ზუსტი ქულის მიხედვით
 // let score = 100;
 // switch (score) {
-//   case 100:
+//   case 85:
 //     console.log("Perfect score!");
 //     break;
-//   case 85:
+//   case 100:
 //     console.log("Very good!");
 //     break;
 //   case 60:
