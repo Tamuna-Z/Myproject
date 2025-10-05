@@ -173,67 +173,15 @@ allow(87)
 // }
 // sayHello("Ana");
 
-// declaration
-
-// function finalPrice(price) {
-//   let discount = price * 0.20;       // 20% ფასდაკლება
-//   let total = price - discount;      // საბოლოო ფასი
-//   return total;
-// }
-
-// // გამოყენება   expression
-// let result = finalPrice(100)
-// console.log(result); // 80
-
-// let result2 = finalPrice(250)
-// console.log(result2); // 200
-
-//  expression function
-
-
-
-const finalPrice = function(price) {
-  let discount = price * 0.20;
-  let total = price - discount;
-  return total;
-};
-console.log(finalPrice(130)); // 80
-console.log(finalPrice(234)); // 80
-console.log(finalPrice(1130)); // 80
-
-
-
-//  arrow function1
-// const finalPrice = (price) => {
-//   let discount = price * 0.20;
-//   let total = price - discount;
-//   return total;
-// };
-
-// console.log(finalPrice(250)); // 200
-
-
- 
-//  arrow function2
-// const finalPrice = price => price - price * 0.20;
-
-// console.log(finalPrice(500)); // 400
 
 
 // სავარჯიშოები
 
-//1) დაწერე ფუნქცია, რომელიც მიიღებს რიცხვს და დააბრუნებს  კვადრატს.
-
-function square(number1, number2){
-  return number1 + number2
-
-}
-
-console.log(square(2,5))
+// 1) დაწერე ფუნქცია, რომელიც მიიღებს რიცხვს და დააბრუნებს  კვადრატს.
 
 // მაგალითი: თუ შეიყვან 5 → უნდა დააბრუნოს 25.
 
-//2) დაწერე ფუნქცია, რომელიც მიიღებს ორ რიცხვს და დააბრუნებს მათ ჯამს.
+// 2) დაწერე ფუნქცია, რომელიც მიიღებს ორ რიცხვს და დააბრუნებს მათ ჯამს.
 
 // მაგალითი: 4 და 7 → შედეგი 11.
 
@@ -243,7 +191,7 @@ console.log(square(2,5))
 
 // მაგალითად: თუ არგუმენტი არის "ნინო" → "გამარჯობა, ნინო!".
 
-//4) დაწერე ფუნქცია, რომელიც მიიღებს ასაკს და შეამოწმებს:
+// 4) დაწერე ფუნქცია, რომელიც მიიღებს ასაკს და შეამოწმებს:
 
 // თუ 18-ზე მეტია → "შენ სრულწლოვანი ხარ".
 
